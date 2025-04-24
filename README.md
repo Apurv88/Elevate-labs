@@ -3,6 +3,7 @@ AIML internship tasks and projects
 
 
 TASK 1
+
 1.Titanic dataset analysis using Python and Jupyter Notebook
 
 2.Handled missing values in Age, Embarked, and Cabin columns
