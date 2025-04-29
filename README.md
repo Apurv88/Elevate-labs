@@ -42,6 +42,21 @@ TASK 2
 
 8.Built an Interactive Scatter Plot (using Plotly) to explore relationships between Age and Fare colored by the survival outcome.
 
+TASK 3
+
+1.  Import Libraries: Imports necessary libraries including pandas for data manipulation, matplotlib for plotting, scikit-learn for model building and evaluation.
+2.  Load Data: Reads the housing data from the `Housing.csv'  file into a pandas DataFrame.
+3.  Preprocess Data:
+    - Converts binary categorical features ('mainroad', 'guestroom`, `basement`, `hotwaterheating`, `airconditioning`,`prefarea`) to numerical (1 for 'yes', 0 for 'no').
+    - Applies one-hot encoding to the `furnishingstatus' categorical feature, creating new binary columns for each category (dropping the first to avoid multicollinearity).
+4.  Split Data: Divides the dataset into training (80%) and testing (20%) sets using a 'random_state' for reproducibility. The features ('X') and the target variable ('price`, 'y') are separated.
+5.  Train Model: Initializes and trains a linear regression model using the training data ('X_train', `y_train').
+6.  Evaluate and Plot:
+    - Predicts house prices on the test data (`X_test').
+    - Calculates and prints the Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²) to assess the model's performance.
+    - Generates a scatter plot comparing the actual and predicted prices against the 'area' feature in the test set.
+    - Prints a DataFrame showing the coefficients learned by the linear regression model for each feature, sorted in descending order.
+
 
 
 
