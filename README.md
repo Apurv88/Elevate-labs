@@ -58,6 +58,21 @@ TASK 3
     - Prints a DataFrame showing the coefficients learned by the linear regression model for each feature, sorted in descending order.
 
 
+TASK 4
+
+1.Importing Libraries:We start by bringing in the tools we need—pandas and NumPy for handling data, matplotlib and seaborn for creating graphs, and scikit-learn for building and evaluating our machine learning model.
+
+2.Loading the Dataset:We read the breast cancer dataset from a CSV file. Then, we clean it up a bit by removing unnecessary columns like IDs and converting the target column (diagnosis) from text labels ('M' for malignant and 'B' for benign) into numbers (1 and 0) so the model can understand it.
+
+3.Preparing the Data:We split the dataset into two parts—one for training the model and one for testing it. Then we scale the features using standardization so that all values are on a similar range, which helps the model learn better.
+
+4.Training the Model:We use logistic regression, a simple but powerful algorithm for binary classification, and train it on our cleaned and prepared training data.
+
+5.Evaluating the Model:After training, we test the model’s performance on the test data. We check how well it's doing using a confusion matrix, a detailed classification report (which shows precision, recall, etc.), and the ROC-AUC score. We also visualize this performance with plots like the ROC curve.
+
+6.Fine-Tuning and Understanding the Model:We experiment by changing the probability threshold (e.g., from 0.5 to 0.6) to see how it affects predictions. Then, we re-check performance. Lastly, we look at the sigmoid function—a key part of logistic regression—to understand how the model turns raw numbers into probabilities.
+
+
 
 
 
