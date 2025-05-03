@@ -72,7 +72,39 @@ TASK 4
 
 6.Fine-Tuning and Understanding the Model:We experiment by changing the probability threshold (e.g., from 0.5 to 0.6) to see how it affects predictions. Then, we re-check performance. Lastly, we look at the sigmoid function—a key part of logistic regression—to understand how the model turns raw numbers into probabilities.
 
+Task 5: Decision Trees and Random Forests
 
+Objective:
+Learn and implement tree-based models for classification & regression tasks.
+
+Tools Used:
+Scikit-learn, Matplotlib
+
+Steps:
+1.Load the dataset (heart.csv).
+2.Train a Decision Tree Classifier and visualize it using plot_tree().
+3.Analyze overfitting by comparing train/test accuracy and limiting tree depth.
+4.Train a Random Forest Classifier and compare its accuracy.
+5.Plot feature importances to understand influential features.
+6.Perform cross-validation to evaluate model robustness.
+
+Task 6: K-Nearest Neighbors (KNN) Classification
+
+Objective:
+Understand and apply KNN for classification tasks.
+
+Tools Used:
+Scikit-learn, Pandas, Matplotlib
+
+Steps:
+
+1.Load the dataset (Iris.csv).
+2.Normalize features using StandardScaler.
+3.Use KNeighborsClassifier to build a KNN model.
+4.Perform a grid search over K (1–20) with cross-validation to find the best K.
+5.Evaluate the model using accuracy and a confusion matrix.
+6.Plot cross-validation accuracy vs. K.
+7.Visualize decision boundaries using the first two features.
 
 
 
