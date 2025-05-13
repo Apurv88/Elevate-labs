@@ -107,6 +107,58 @@ Steps:
 7.Visualize decision boundaries using the first two features.
 
 
+Task 7:
+
+1.Loads and cleans a dataset
+-We generate a synthetic dataset with two features and introduce a few missing values to simulate real-world scenarios. These are cleaned up before modeling.
+
+2.Prepares the data for modeling
+-The features are standardized to make sure the SVM performs optimally. We split the dataset into training and testing sets for fair evaluation.
+
+3.Trains two SVM models
+-One uses a linear kernel, suitable for data that's linearly separable.
+-The other uses an RBF kernel, which is better for capturing non-linear relationships.
+
+4.Visualizes decision boundaries
+-To understand how the models separate the two classes, we plot their decision boundaries. This gives an intuitive sense of model behavior.
+
+5.Tunes the model using Grid Search
+-We experiment with different values of C and gamma to find the best-performing combination for the RBF kernel using GridSearchCV.
+
+6.Evaluates model performance
+-We use cross-validation to measure model accuracy, and then check performance on test data using metrics like precision, recall, and F1-score.
+
+
+Task 8:
+
+1.Importing Libraries
+-Imported necessary libraries for data preprocessing, clustering, evaluation, and visualization.
+
+2.Loading the Dataset
+-Loaded Mall_Customers.csv into a pandas DataFrame and reviewed the data structure.
+
+3.Feature Selection
+-Selected relevant features for clustering:
+Annual Income (k$)
+Spending Score (1-100)
+
+4.Data Standardization
+-Scaled features using StandardScaler to normalize values before clustering.
+-Finding Optimal Number of Clusters (K)
+-Used the Elbow Method by plotting inertia scores for K = 1 to 10 to visually determine the best number of clusters.
+
+5.Training the K-Means Model
+-Applied the K-Means algorithm with the chosen K (e.g., 5) to segment customers into clusters.
+
+6.Cluster Visualization
+-Visualized clusters using PCA, reducing dimensions to 2D for better interpretability.
+-Additionally, visualized the clusters using original features (Annual Income vs Spending Score) for more intuitive understanding.
+
+7.Evaluation
+-Measured cluster quality using the Silhouette Score, which indicates how well the clusters are separated and how tightly grouped they are.
+
+
+
 
 
 
